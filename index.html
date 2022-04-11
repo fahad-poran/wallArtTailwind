@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output/tailwind.css">
+</head>
+<body>
+
+    <div>
+
+        <div class="flex pl-3 space-x-2">
+            <a href="">CONTACT US</a>
+            <p>HELP</p>
+        </div>
+      
+
+    </div>
+
+    <nav class="bg-gray-400 p-2 mt-0 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex flex-wrap items-center">
+		    <div class=" w-full md:w-1/2 justify-center md:justify-start text-yellow-50 font-semibold">
+
+                <div class="flex pl-3 space-x-2">
+                    <a href="">CONTACT US</a>
+                    <p>HELP</p>
+                    
+                </div>
+                <!-- <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+					<span class="text-2xl pl-2"><i class="em em-grinning"></i> Brand McBrandface</span>
+				</a> -->
+                <img class="h-10 pl-3" src="https://play-lh.googleusercontent.com/p6kS3dCcILt9Z4vRMxHXZTbRecqnZTx5ysBVp6Qe3fDofokRLuWjRxF8J0TkMTG2gKo" alt="">
+				
+            </div>
+			<div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+				  <li class="mr-3">
+					<a class="inline-block py-2 px-4 text-white no-underline" href="#">PAINTING</a>
+				  </li>
+				  <li class="mr-3">
+					<a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">MAKE YOUR OWN</a>
+				  </li>
+				  <li class="mr-3">
+					<a class="inline-block text-white no-underline hover:text-red-500 hover:text-underline py-2 px-4" href="#">BEST SELL</a>
+				  </li>
+					<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">SIGN IN</a>
+				  </li>
+				</ul>
+			</div>
+        </div>
+    </nav>
+<!-- slider  -->
+
+
+
+
+
+
+<!-- end of slider show  -->
+<br><br><br><br><br>
+<div class="flex align-center justify-center">
+  <h3 class="text-gray-400 ">Our Bestsellers</h3>
+</div>
+
+  <div></div>
+
+  <div x-data="{ openTab: 1 }" class="p-6">
+    <ul class="flex align-center justify-center">
+      <li @click="openTab = 1" :class="{ '-mb-px': openTab === 1 }" class="-mb-px mr-1">
+        <a :class="openTab === 1 ? '  text-red-400' : 'text-gray-500 hover:text-red-400'" class="bg-white inline-block py-2 px-4" href="#">
+          Antique
+        </a>
+      </li>
+      <li @click="openTab = 2" :class="{ '-mb-px': openTab === 1 }" class="-mb-px mr-1">
+        <a :class="openTab === 2 ? '  text-red-400' : 'text-gray-500 hover:text-red-400'" class="bg-white inline-block py-2 px-4" href="#">
+          Painting
+        </a>
+      </li>
+      <li @click="openTab = 3" :class="{ '-mb-px': openTab === 1 }" class="-mb-px mr-1">
+        <a :class="openTab === 3 ? '  text-red-400' : 'text-gray-500 hover:text-red-400'" class="bg-white inline-block py-2 px-4" href="#">
+          Pottery
+        </a>
+      </li>
+      <li @click="openTab = 4" :class="{ '-mb-px': openTab === 1 }" class="-mb-px mr-1">
+        <a :class="openTab === 4 ? '  text-gray-400' : 'text-gray-500 hover:text-red-400'" class="bg-white inline-block py-2 px-4" href="#">
+          Sketch
+        </a>
+      </li>
+      
+    </ul>
+    <div class="w-full pt-4">
+      <div class="grid grid-cols-4 gap-7 px-10" x-show="openTab === 1">
+
+      
+        <div class="">
+          <img class="h-auto w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-big-painting-radha-krishna-on-a-ferry-romantic-big-panoramic-wall-painting-32849285480614.jpg?v=1647427794" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+        <div class="">
+          <img class="h-auto w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-big-painting-radha-krishna-on-a-ferry-romantic-big-panoramic-wall-painting-32849285480614.jpg?v=1647427794" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+        <div class="">
+          <img class="h-auto w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-big-painting-radha-krishna-on-a-ferry-romantic-big-panoramic-wall-painting-32849285480614.jpg?v=1647427794" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+        <div class="">
+          <img class="h-auto w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-big-painting-radha-krishna-on-a-ferry-romantic-big-panoramic-wall-painting-32849285480614.jpg?v=1647427794" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+      
+      </div>
+      <div class="grid grid-cols-4 gap-4 p-10" x-show="openTab === 2">Tab #2
+
+        <div class="">
+          <img class="h-56 w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-big-painting-golden-fleur-canvas-printed-painting-30135542317222.jpg?v=1641643774" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+        <div class="">
+          <img class="h-56 w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-big-painting-custom-seven-horses-wall-painting-canvas-wall-hanging-big-panoramic-29487857107110.jpg?v=1628477384" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+        <div class="">
+          <img class="h-56 w-auto" src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-mdf-clocks-austere-big-wall-clock-29604068950182.jpg?v=1628453673" alt="">
+        <div class="space-y-3">
+          <h5 class="text-xs text-center ">Spring Leaf Print Zinnia Double Bedsheet with 2 pillow covers</h5>
+        <h6 class="text-sm text-green-700 font-semibold text-center">Tk: 800</h6>
+        </div>
+        </div>
+        
+
+      </div>
+      <div x-show="openTab === 3">Tab #3</div>
+      <div x-show="openTab === 4">Tab #4</div>
+    </div>
+  </div>
+
+
+
+<!-- start of item to sell  -->
+
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white">
+    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h2 class=" font-semibold tracking-tight text-gray-800">Customers also purchased</h2>
+  
+      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div class="group relative">
+          <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+            <img src="https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Black</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">$35</p>
+          </div>
+        </div>
+  
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>
+<div class="bg-white">
+    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h2 class=" font-semibold tracking-tight text-gray-800">Customers also purchased</h2>
+  
+      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div class="group relative">
+          <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+            <img src="https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+          </div>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Black</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">$35</p>
+          </div>
+        </div>
+  
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<!-- end of item to be sold  -->
+
+
+
+
+
+<div class="h-screen flex items-center justify-center text-center">
+<!-- <h2 class="text-red-300 p-5 bg-black">hii, hello</h2> -->
+<div class="space-y-4 max-w-sm mx-auto p-8 bg-yellow-50 rounded-xl shadow-md sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyMpgdy5MG7MR19b4YxOJhhjcEWiiZRcIpA&usqp=CAU" class="sm:flex-shrink-0 h-24 mx-auto rounded-full ring-4 ring-red-300" alt="">
+   <div>
+    <div class="sm:text-left sm:space-y-3">
+        <p class="text-lg text-black font-semibold">The first Impresion*</p>
+        <p class="text-gray-500 font-medium">the 2nd paragraph</p>
+        </div>
+    <button class="px-4 py-1 border font-semibold rounded-full text-sm text-purple-800">Good*</button>
+   </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+</html>
